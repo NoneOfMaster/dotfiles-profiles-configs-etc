@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Humane",
+    "search.enableSearchEditorPreview": true,
+    "debug.node.autoAttach": "on",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+}
