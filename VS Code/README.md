@@ -10,44 +10,71 @@
 
 `code --list-extensions`
 
+- aaron-bond.better-comments
 - albert.TabOut
+- dbaeumer.vscode-eslint
 - eamodio.gitlens
+- esbenp.prettier-vscode
+- formulahendry.code-runner
 - gerane.Theme-Humane
 - humao.rest-client
-- mhutchie.git-graph
+- johnpapa.vscode-peacock
+- lifeart.vscode-ember-unstable
+- msjsdiag.debugger-for-chrome
 - vscodevim.vim
 
 ## Bindings Highlights
 
-| action | native | custom | vim |
-| ------ | ------ | ------ | --- |
-| **movement and selection**
-| line | cmd [+shift] + arrows
-| around line | | cmd + '
+| ACTION | NATIVE | CUSTOM | VIM | MISC |
+| ------ | ------ | ------ | ------ | ------ |
+| **MOVEMENT AND SELECTION** <!---->
+| select line | cmd [+shift] + arrows
+| select around line | | cmd + '
 | delete a line | | cmd + shift + '
-| around word (next duplicate selection) | cmd + d
-| all instances of word| cmd + shift + l
-| bigWord | alt [+shift] + arrows
-| smallword | crtl + alt [+shift] + arrows
-| enclosures or blocks | shift + ctrl + left/right arrow
-| go to line | ctrl + g + line #
+| select around word (then next duplicate selection) | cmd + d
+| select all instances of word| cmd + shift + l
+| select bigWord | alt [+shift] + arrows
+| select smallword | crtl + alt [+shift] + arrows
+| shrink/expand selection (smallWord, bigWord, block/enclosure) | | shift + alt + up/down arrow
+| expand and find | cmd + e
+| go to line | ctrl + g + line#
 | add line after | cmd + enter
 | add line before | cmd + shift + enter
-| duplicate up/down | shift + alt + up/down arrow
-| **view**
-| split right | | cmd + ;
-| next editor | | cmd + k
-| prev editor | | cmd + j
-| next group | | cmd + l
-| prev group | | cmd + h
-| **files**
+| outdent/indent line | cmd + ]/[
+| duplicate up/down | | shift + ctrl + up/down arrow
+| **VIEW (EDITOR)** <!---->
+| move editor to next group | | cmd + ;
+| move editor to previous group | | cmd + shift + ;
+| focus next editor | | cmd + k
+| focus prev editor | | cmd + j
+| focus next group | | cmd + l
+| focus prev group | | cmd + h
+| close all windows | | cmd + y
+| **VIEW (INTEGRATED TERMINAL)** <!---->
+| toggle integrated terminal | | cmd + i
+| return to editor | cmd + numbers |
+| split pane | | cmd + ;
+| close pane | | | | ctrl + d
+| focus next pane | | cmd + k
+| focus previous pane | | cmd + j
+| clear | | cmd + shift + i
+| resize pane | ctrl + cmd + arrows
+| **FILES** <!----> 
 | new folder | | alt/opt + cmd + n
-| **vs code**
+| **VS CODE** <!---->
 | go to shortcuts editor | | ctrl + cmd + k
 | sidebar | cmd + b |
-| terminal | cmd + ` |
-| stick previewed tab | ctrl+ k
+| open last editor/navigate editor picker | | alt + tab
+| reopen closed editor | cmd + shift + t
+| stick previewed tab | | cmd + shift + k 
 | open file from code navigator without closing code navigator | right arrow
+| open and stick file from code navigator | alt + enter
 | preview .md file | ctrl + cmd + v
-| **html & css**
+| Quickfix shortcuts (/all previously cmd + .) | | cmd + m
+| breadcrumbs.focus | | [unassigned]
+| workbench.actions.openSettings | | [unassigned]
+| **HTML & CSS** <!---->
 | emmet | [emmet.io](https://emmet.io/)
+
+## Todo
+- search.action.openNewEditor

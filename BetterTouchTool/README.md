@@ -1,0 +1,1 @@
+See Hyper Key setup in [karabiner.json](../Karabiner-Elements/karabiner.json)

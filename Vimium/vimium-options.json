@@ -1,10 +1,15 @@
 {
   "settingsVersion": "1.66",
-  "exclusionRules": [],
+  "exclusionRules": [
+    {
+      "pattern": "https?://github.com/*",
+      "passKeys": "t"
+    }
+  ],
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": false,
-  "keyMappings": "# Insert your preferred key mappings here.",
+  "keyMappings": "map <m-j> previousTab\nmap <m-k> nextTab",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",

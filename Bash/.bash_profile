@@ -49,6 +49,13 @@ function desktop {
   cd /Users/$USER/Desktop/$@
 }
 
+# zsh-style take
+function take ()
+{
+  mkdir -p -- "$1" &&
+  cd -P -- "$1"
+}
+
 # grep for matching process `psg someProcess`
 function psg {
   FIRST=`echo $1 | sed -e 's/^\(.\).*/\1/'`
@@ -80,9 +87,24 @@ function extract () {
 # Aliases
 # =====================
 
-  # LS
-  alias ll='ls -lah'
-  alias l="ls -l"
+  # ls
+  alias ll="ls -lah" # long, all, human-readable 
+  alias l="ls -lh"
+
+  # applications
+  alias c="code ."
+  alias o="open ."
+
+  # nav
+  alias ..="cd .."
+  alias h="cd -" 
+
+  # builtins, misc
+  alias grep="grep --color=auto"
+  alias mkdir="mkdir -pv" # mkdir parents, verbose
+
+  # https://github.com/sindresorhus/trash-cli
+  alias rm='echo "rm alias (/bin/rm) disabled: use trash"'
 
   # Git
   alias gcl="git clone"
@@ -97,16 +119,20 @@ function extract () {
   alias gcam="git commit -am"
   alias gbb="git branch -b"
 
-# Case-Insensitive Auto Completion
-  bind "set completion-ignore-case on"
 
 # Final Configurations and Plugins
 # =====================
+
+  # Case-Insensitive Auto Completion
+  bind "set completion-ignore-case on"
 
   # activate bash git completion if installed via homebrew
   if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
   fi
+
+  # replace macOS sed with gnu-sed
+  PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
   # NVM
   export NVM_DIR=~/.nvm
