@@ -4,7 +4,7 @@
 - Disconnect
 - FlashBlock
 - HTTPS Everywhere
-- Octotree
+- Octotree (disable 'Show sidebar on hover')
 - React Developer Tools
 - Redux DevTools
 - Ember Inspector

@@ -64,11 +64,12 @@
 | **VS CODE** <!---->
 | go to shortcuts editor | | ctrl + cmd + k
 | sidebar | cmd + b |
+| open in editor (search) | alt + enter
 | open last editor/navigate editor picker | | alt + tab
 | reopen closed editor | cmd + shift + t
 | stick previewed tab | | cmd + shift + k 
 | open file from code navigator without closing code navigator | right arrow
-| open and stick file from code navigator | alt + enter
+| open and stick file from code navigator (editor picker) | alt + enter
 | preview .md file | ctrl + cmd + v
 | Quickfix shortcuts (/all previously cmd + .) | | cmd + m
 | breadcrumbs.focus | | [unassigned]
