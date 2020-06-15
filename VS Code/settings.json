@@ -8,13 +8,33 @@
   "editor.formatOnSave": true,
   "editor.cursorBlinking": "solid",
   "workbench.sideBar.location": "right",
-  "editor.lineNumbers": "relative",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "vim.surround": true,
   "vim.commentary": true,
   "vim.indent-object": true,
   "vim.easymotion": true,
+  "vim.hlsearch": true,
   "vim.leader": "<space>",
-  "telemetry.enableTelemetry": false
+  "telemetry.enableTelemetry": false,
+  "window.zoomLevel": 0,
+  "breadcrumbs.enabled": true,
+  "[handlebars]": {
+    "editor.foldingStrategy": "indentation"
+  },
+  "settings.cycle": [
+    {
+      "id": "lineNumbers",
+      "values": [
+        {
+          "editor.lineNumbers": "on"
+        },
+        {
+          "editor.lineNumbers": "relative"
+        }
+      ]
+    }
+  ],
+  "gitlens.views.repositories.branches.layout": "list",
+  "editor.lineNumbers": "relative"
 }

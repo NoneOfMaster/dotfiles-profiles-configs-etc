@@ -4,24 +4,40 @@
 
 | file                                 | location                                 |
 | ------------------------------------ | ---------------------------------------- |
-| `settings.json` & `keybindings.json` | ~/Library/Application Support/Code/User/ |
+| settings.json | ~/Library/Application Support/Code/User/ |
+| keybindings.json | ~/Library/Application Support/Code/User/ |
+| `code --list-extensions` | *
 
 ## Extensions Highlights
 
-`code --list-extensions`
 
-- aaron-bond.better-comments
+### GENERAL
+
 - albert.TabOut
+- hoovercj.vscode-settings-cycler
 - dbaeumer.vscode-eslint
-- eamodio.gitlens
 - esbenp.prettier-vscode
 - formulahendry.code-runner
 - gerane.Theme-Humane
 - humao.rest-client
 - johnpapa.vscode-peacock
 - lifeart.vscode-ember-unstable
+- aaron-bond.better-comments
 - msjsdiag.debugger-for-chrome
 - vscodevim.vim
+- dbaeumer.vscode-eslint
+
+### GIT
+
+- github.vscode-pull-request-github
+- eamodio.gitlens
+
+### LANGUAGE/FRAMEWORK SPECIFIC
+
+- josa.ember-related-files
+- lifeart.vscode-glimmer-syntax
+- lifeart.vscode-ember-unstable
+- bradlc.vscode-tailwindcss
 
 ## Bindings Highlights
 
@@ -42,7 +58,7 @@
 | add line before | cmd + shift + enter
 | outdent/indent line | cmd + ]/[
 | duplicate up/down | | shift + ctrl + up/down arrow
-| **VIEW (EDITOR)** <!---->
+| **VIEW - EDITOR** <!---->
 | move editor to next group | | cmd + ;
 | move editor to previous group | | cmd + shift + ;
 | focus next editor | | cmd + k
@@ -50,7 +66,9 @@
 | focus next group | | cmd + l
 | focus prev group | | cmd + h
 | close all windows | | cmd + y
-| **VIEW (INTEGRATED TERMINAL)** <!---->
+| open sidebar | ctrl + b
+| open git panel | | ctrl + cmd + g
+| **VIEW - INTEGRATED TERMINAL** <!---->
 | toggle integrated terminal | | cmd + i
 | return to editor | cmd + numbers |
 | split pane | | cmd + ;
@@ -58,9 +76,13 @@
 | focus next pane | | cmd + k
 | focus previous pane | | cmd + j
 | clear | | cmd + shift + i
-| resize pane | ctrl + cmd + arrows
+| resize pane | ctrl + cmd + arrow
+| **VIEW - BREADCRUMBS** <!---->
+| navigation | | hljk
 | **FILES** <!----> 
 | new folder | | alt/opt + cmd + n
+| **SETTING CYCLER** <!---->
+| alternate relative/absolute line numbers | | ctrl + cmd l
 | **VS CODE** <!---->
 | go to shortcuts editor | | ctrl + cmd + k
 | sidebar | cmd + b |
