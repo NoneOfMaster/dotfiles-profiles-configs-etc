@@ -45,11 +45,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Env Vars
 	export GIT_EDITOR="code -w"
-  export EDITOR="code -w"
+    export EDITOR="code -w"
 
 # Aliases
+	# config shortcuts
 	alias zshconfig="vim ~/.zshrc"
-	# alias ohmyzsh="mate ~/.oh-my-zsh"
+	alias nvimconfig="nvim ~/.config/nvim/init.vim"
 
 	# ls
 	alias ll="ls -lah" # long, all, human-readable 
