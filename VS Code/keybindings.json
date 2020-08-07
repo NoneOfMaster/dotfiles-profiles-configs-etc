@@ -245,7 +245,7 @@
     "command": "-workbench.action.keepEditor"
   },
   {
-    "key": "h",
+    "key": "cmd+h",
     "command": "breadcrumbs.focusPrevious",
     "when": "breadcrumbsActive && breadcrumbsVisible"
   },
@@ -255,7 +255,7 @@
     "when": "breadcrumbsActive && breadcrumbsVisible"
   },
   {
-    "key": "l",
+    "key": "cmd+l",
     "command": "breadcrumbs.focusNext",
     "when": "breadcrumbsActive && breadcrumbsVisible"
   },
@@ -265,7 +265,7 @@
     "when": "breadcrumbsActive && breadcrumbsVisible"
   },
   {
-    "key": "ctrl+alt+l",
+    "key": "ctrl+cmd+l",
     "command": "settings.cycle.lineNumbers"
   },
   {
@@ -275,5 +275,19 @@
   {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+cmd+b",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "-bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+g",
+    "command": "gitlens.openFileInRemote"
   }
 ]

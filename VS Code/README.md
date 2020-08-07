@@ -13,19 +13,17 @@
 
 ### GENERAL
 
+- asvetliakov.vscode-neovim
+- esbenp.prettier-vscode
+- dbaeumer.vscode-eslint
+- gerane.Theme-Humane
 - albert.TabOut
 - hoovercj.vscode-settings-cycler
-- dbaeumer.vscode-eslint
-- esbenp.prettier-vscode
 - formulahendry.code-runner
-- gerane.Theme-Humane
 - humao.rest-client
 - johnpapa.vscode-peacock
-- lifeart.vscode-ember-unstable
 - aaron-bond.better-comments
 - msjsdiag.debugger-for-chrome
-- vscodevim.vim
-- dbaeumer.vscode-eslint
 
 ### GIT
 
@@ -34,6 +32,7 @@
 
 ### LANGUAGE/FRAMEWORK SPECIFIC
 
+- lifeart.vscode-ember-unstable
 - josa.ember-related-files
 - lifeart.vscode-glimmer-syntax
 - lifeart.vscode-ember-unstable
@@ -78,24 +77,29 @@
 | clear | | cmd + shift + i
 | resize pane | ctrl + cmd + arrow
 | **VIEW - BREADCRUMBS** <!---->
-| navigation | | hljk
+| navigation forward | | l
+| navigation backward | | h
+| **VIEW - SEARCH** <!---->
+| open in editor | alt + enter
+| **VIEW - CODE NAVIGATOR** <!---->
+| open and stick file | alt + enter
+| open and stick file without closing code navigator | right arrow
 | **FILES** <!----> 
-| new folder | | alt/opt + cmd + n
-| **SETTING CYCLER** <!---->
-| alternate relative/absolute line numbers | | ctrl + cmd l
+| new folder | | opt + cmd + n
 | **VS CODE** <!---->
-| go to shortcuts editor | | ctrl + cmd + k
 | sidebar | cmd + b |
-| open in editor (search) | alt + enter
+| focus and select breadcrumbs | | cmd + shift + .
+| go to shortcuts editor | | ctrl + cmd + k
+| alternate relative/absolute line numbers (extension: Settings Cycler) | | ctrl + cmd + l
 | open last editor/navigate editor picker | | alt + tab
 | reopen closed editor | cmd + shift + t
 | stick previewed tab | | cmd + shift + k 
-| open file from code navigator without closing code navigator | right arrow
-| open and stick file from code navigator (editor picker) | alt + enter
 | preview .md file | ctrl + cmd + v
 | Quickfix shortcuts (/all previously cmd + .) | | cmd + m
 | breadcrumbs.focus | | [unassigned]
 | workbench.actions.openSettings | | [unassigned]
+| **GIT** <!---->
+| open branch > file > line on GitHub (extension: GitLens) | | opt + cmd + g
 | **HTML & CSS** <!---->
 | emmet | [emmet.io](https://emmet.io/)
 

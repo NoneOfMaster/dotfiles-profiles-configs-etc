@@ -35,6 +35,15 @@ source $ZSH/oh-my-zsh.sh
 ## User Settings
 
 # Functions 
+	function c {
+		if [[ $# -eq 0 ]]
+			then
+				code .
+			else
+				code $@
+		fi
+	}
+
 	function desktop {
 		cd /Users/$USER/Desktop/$@
 	}
@@ -45,9 +54,12 @@ source $ZSH/oh-my-zsh.sh
 
 # Env Vars
 	export GIT_EDITOR="code -w"
-    export EDITOR="code -w"
+	export EDITOR="code -w"
 
 # Aliases
+	# overrides
+	alias vim="nvim"
+	
 	# config shortcuts
 	alias zshconfig="vim ~/.zshrc"
 	alias nvimconfig="nvim ~/.config/nvim/init.vim"
@@ -57,7 +69,6 @@ source $ZSH/oh-my-zsh.sh
 	alias l="ls -a"
 
 	# applications
-	alias c="code ."
 	alias o="open ."
 
 	# nav
@@ -66,10 +77,14 @@ source $ZSH/oh-my-zsh.sh
 
 	# builtins, misc
 	alias grep="grep --color=auto"
-	alias mkdir="mkdir -pv" # mkdir parents, verbose
+	alias mkdir="mkdir -pv" # parents, verbose
 
 	# https://github.com/sindresorhus/trash-cli
 	alias rm='echo "rm alias (/bin/rm) disabled: use trash"'
+
+	# ember
+	alias et="z canvas; ember t -s --no-launch"	
+	alias startMi="repos; itermocil"
 
 # PATH
 	export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
@@ -115,3 +130,5 @@ zinit light-mode for \
     zinit-zsh/z-a-bin-gem-node
 
 ### End of Zinit's installer chunk
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

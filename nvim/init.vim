@@ -26,14 +26,32 @@
 	:nnoremap <SPACE> <Nop>
 	:let mapleader = " "
 
-	:nnoremap <leader>c _C
+	:nnoremap <leader>p "*p
+	:nnoremap <leader>P "*P
+	:nnoremap <leader>d "_d
+
+	" escape to clear last search highlighting
+	:nnoremap <silent> <Esc> :nohlsearch<Esc>
+
+	" one leader for easymotion instead of two
+	map <Leader> <Plug>(easymotion-prefix)
 
 	" set tabstops and shiftwidth 2 spaces
-	set ts=2 sw=2
+	:set ts=2 sw=2
+
+	" default case insensitive search
+	:set ic
 
 " managed in ~/.config/nvim/plugged by default
 	call plug#begin()
 		Plug 'tpope/vim-commentary'
 		Plug 'tpope/vim-surround'
 		Plug 'tpope/vim-unimpaired'
+		Plug 'tpope/vim-repeat'
+
+		if exists('g:vscode')
+			Plug 'asvetliakov/vim-easymotion'
+		else 
+			Plug 'Lokaltog/vim-easymotion'
+		endif
 	call plug#end()

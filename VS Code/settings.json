@@ -20,6 +20,7 @@
   "window.zoomLevel": 0,
   "breadcrumbs.enabled": true,
   "[handlebars]": {
+    "editor.defaultFormatter": "mfeckies.handlebars-formatter",
     "editor.foldingStrategy": "indentation"
   },
   "settings.cycle": [
@@ -36,5 +37,6 @@
     }
   ],
   "gitlens.views.repositories.branches.layout": "list",
-  "editor.lineNumbers": "relative"
+  "editor.lineNumbers": "on",
+  "vscode-neovim.neovimPath": "/usr/local/bin/nvim"
 }
