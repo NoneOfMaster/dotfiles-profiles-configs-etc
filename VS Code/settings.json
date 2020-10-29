@@ -37,6 +37,7 @@
     }
   ],
   "gitlens.views.repositories.branches.layout": "list",
-  "editor.lineNumbers": "on",
-  "vscode-neovim.neovimPath": "/usr/local/bin/nvim"
+  "editor.lineNumbers": "relative",
+  "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
+  "tabnine.experimentalAutoImports": true
 }

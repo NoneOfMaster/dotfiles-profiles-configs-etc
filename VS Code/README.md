@@ -13,12 +13,17 @@
 
 ### GENERAL
 
+Essential
 - asvetliakov.vscode-neovim
 - esbenp.prettier-vscode
 - dbaeumer.vscode-eslint
+- tabnine.tabnine-vscode
 - gerane.Theme-Humane
 - albert.TabOut
+- oderwat.indent-rainbow
 - hoovercj.vscode-settings-cycler
+
+Honerable Mention
 - formulahendry.code-runner
 - humao.rest-client
 - johnpapa.vscode-peacock
@@ -33,7 +38,7 @@
 ### LANGUAGE/FRAMEWORK SPECIFIC
 
 - lifeart.vscode-ember-unstable
-- josa.ember-related-files
+- josa.ember-related-files ([w/colocation support](https://github.com/NoneOfMaster/vscode-ember-related-files))
 - lifeart.vscode-glimmer-syntax
 - lifeart.vscode-ember-unstable
 - bradlc.vscode-tailwindcss
@@ -60,6 +65,7 @@
 | **VIEW - EDITOR** <!---->
 | move editor to next group | | cmd + ;
 | move editor to previous group | | cmd + shift + ;
+| split editor right | | cmd + opt + shift + ;
 | focus next editor | | cmd + k
 | focus prev editor | | cmd + j
 | focus next group | | cmd + l

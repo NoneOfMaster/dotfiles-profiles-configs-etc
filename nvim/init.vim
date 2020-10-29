@@ -22,13 +22,15 @@
 		:augroup END
 	endif
 
-" general settings
+" mappings
 	:nnoremap <SPACE> <Nop>
 	:let mapleader = " "
 
 	:nnoremap <leader>p "*p
 	:nnoremap <leader>P "*P
+	:nnoremap <leader>y "*y
 	:nnoremap <leader>d "_d
+	:nnoremap <leader>r viwp
 
 	" escape to clear last search highlighting
 	:nnoremap <silent> <Esc> :nohlsearch<Esc>
@@ -36,11 +38,20 @@
 	" one leader for easymotion instead of two
 	map <Leader> <Plug>(easymotion-prefix)
 
-	" set tabstops and shiftwidth 2 spaces
+" settings
+	" tabstops and shiftwidth 2 spaces
 	:set ts=2 sw=2
 
 	" default case insensitive search
 	:set ic
+
+	hi EasyMotionTarget2First ctermbg=none ctermfg=red
+	hi EasyMotionTarget2Second ctermbg=none ctermfg=red
+
+" abbreviations
+
+	iabbrev dgr debugger
+	iabbrev apt await this.pauseTest()
 
 " managed in ~/.config/nvim/plugged by default
 	call plug#begin()
@@ -48,10 +59,11 @@
 		Plug 'tpope/vim-surround'
 		Plug 'tpope/vim-unimpaired'
 		Plug 'tpope/vim-repeat'
+		Plug 'wellle/targets.vim'
 
 		if exists('g:vscode')
 			Plug 'asvetliakov/vim-easymotion'
 		else 
-			Plug 'Lokaltog/vim-easymotion'
+			Plug 'easymotion/vim-easymotion'
 		endif
 	call plug#end()
