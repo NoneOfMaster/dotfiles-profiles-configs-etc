@@ -3,8 +3,7 @@
 - **Karabiner-Elements + BetterTouchTool**
 - **Chrome + Vimium**
 - **iTerm2 + Zsh + Oh My Zsh + fzf**
-
-
+- **Right Cmd as Hyper Key + Caps as Exit + Shift+Caps as Caps Lock**
 
 # Todo
 - VSCode hjkl navigation for `inQuickOpen`

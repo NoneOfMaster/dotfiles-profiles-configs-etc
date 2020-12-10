@@ -293,5 +293,17 @@
   {
     "key": "shift+alt+cmd+;",
     "command": "workbench.action.splitEditorRight"
+  },
+  {
+    "key": "shift+alt+cmd+y",
+    "command": "workbench.action.closeEditorsToTheRight"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "alt+cmd+t",
+    "command": "-workbench.action.closeOtherEditors"
   }
 ]

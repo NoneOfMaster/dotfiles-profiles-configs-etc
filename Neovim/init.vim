@@ -48,6 +48,8 @@
 	hi EasyMotionTarget2First ctermbg=none ctermfg=red
 	hi EasyMotionTarget2Second ctermbg=none ctermfg=red
 
+" custom text objects
+
 " abbreviations
 
 	iabbrev dgr debugger
@@ -60,6 +62,9 @@
 		Plug 'tpope/vim-unimpaired'
 		Plug 'tpope/vim-repeat'
 		Plug 'wellle/targets.vim'
+		Plug 'kana/vim-textobj-user'
+		Plug 'kana/vim-textobj-indent'
+		Plug 'kana/vim-textobj-entire'
 
 		if exists('g:vscode')
 			Plug 'asvetliakov/vim-easymotion'

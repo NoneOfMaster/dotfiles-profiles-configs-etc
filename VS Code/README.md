@@ -1,15 +1,6 @@
 # VSCode
 
-## Settings
-
-| file                                 | location                                 |
-| ------------------------------------ | ---------------------------------------- |
-| settings.json | ~/Library/Application Support/Code/User/ |
-| keybindings.json | ~/Library/Application Support/Code/User/ |
-| `code --list-extensions` | *
-
-## Extensions Highlights
-
+## Extensions
 
 ### GENERAL
 
@@ -43,10 +34,10 @@ Honerable Mention
 - lifeart.vscode-ember-unstable
 - bradlc.vscode-tailwindcss
 
-## Bindings Highlights
+## Bindings
 
-| ACTION | NATIVE | CUSTOM | VIM | MISC |
-| ------ | ------ | ------ | ------ | ------ |
+| ACTION | NATIVE | CUSTOM |
+| ------ | ------ | ------ |
 | **MOVEMENT AND SELECTION** <!---->
 | select line | cmd [+shift] + arrows
 | select around line | | cmd + '
@@ -70,14 +61,15 @@ Honerable Mention
 | focus prev editor | | cmd + j
 | focus next group | | cmd + l
 | focus prev group | | cmd + h
-| close all windows | | cmd + y
+| close all editors | | cmd + y
+| close other editors | | shift + cmd + y
+| close editors to the right | | shift + opt + cmd + y
 | open sidebar | ctrl + b
 | open git panel | | ctrl + cmd + g
 | **VIEW - INTEGRATED TERMINAL** <!---->
 | toggle integrated terminal | | cmd + i
 | return to editor | cmd + numbers |
 | split pane | | cmd + ;
-| close pane | | | | ctrl + d
 | focus next pane | | cmd + k
 | focus previous pane | | cmd + j
 | clear | | cmd + shift + i
@@ -111,3 +103,11 @@ Honerable Mention
 
 ## Todo
 - search.action.openNewEditor
+
+## Settings Locations
+
+| file                                 | location                                 |
+| ------------------------------------ | ---------------------------------------- |
+| settings.json | ~/Library/Application Support/Code/User/ |
+| keybindings.json | ~/Library/Application Support/Code/User/ |
+| `code --list-extensions` | -
