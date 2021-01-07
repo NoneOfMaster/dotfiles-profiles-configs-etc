@@ -82,9 +82,14 @@ source $ZSH/oh-my-zsh.sh
 	# https://github.com/sindresorhus/trash-cli
 	alias rm='echo "rm alias (/bin/rm) disabled: use trash"'
 
+	# git
+	# edit and/or confirm list of local branches tracking merged remote branches and delete
+	alias gtrim='git branch --merged | grep -v "master" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches'
+	
 	# ember
 	alias et="z canvas; ember t -s --no-launch"	
-	alias startMi="repos; itermocil"
+	alias devCanvas="repos; itermocil devCanvas --here"
+	alias devFramework="repos; itermocil devFramework --here"
 
 # PATH
 	export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

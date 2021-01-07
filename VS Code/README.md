@@ -13,6 +13,7 @@ Essential
 - albert.TabOut
 - oderwat.indent-rainbow
 - hoovercj.vscode-settings-cycler
+- deerawan.vscode-dash
 
 Honerable Mention
 - formulahendry.code-runner
