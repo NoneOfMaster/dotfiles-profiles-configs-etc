@@ -30,13 +30,16 @@
 	:nnoremap <leader>P "*P
 	:nnoremap <leader>y "*y
 	:nnoremap <leader>d "_d
-	:nnoremap <leader>r viwp
+	
+	" replacement
+	:nnoremap <leader>r viwpyiw
+	:nmap <leader><S-R>  <Plug>ReplaceWithRegisterOperator
 
 	" escape to clear last search highlighting
 	:nnoremap <silent> <Esc> :nohlsearch<Esc>
 
 	" one leader for easymotion instead of two
-	map <Leader> <Plug>(easymotion-prefix)
+	map <leader> <Plug>(easymotion-prefix)
 
 " settings
 	" tabstops and shiftwidth 2 spaces
@@ -65,6 +68,7 @@
 		Plug 'kana/vim-textobj-user'
 		Plug 'kana/vim-textobj-indent'
 		Plug 'kana/vim-textobj-entire'
+		Plug 'inkarkat/vim-ReplaceWithRegister'
 
 		if exists('g:vscode')
 			Plug 'asvetliakov/vim-easymotion'

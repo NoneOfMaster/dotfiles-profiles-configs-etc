@@ -59,10 +59,11 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 	# overrides
 	alias vim="nvim"
+	alias v="nvim"
 	
 	# config shortcuts
-	alias zshconfig="vim ~/.zshrc"
-	alias nvimconfig="nvim ~/.config/nvim/init.vim"
+	alias zshconfig="v ~/.zshrc"
+	alias nvimconfig="v ~/.config/nvim/init.vim"
 
 	# ls
 	alias ll="ls -lah" # long, all, human-readable 
@@ -94,7 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # PATH
 	export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-	export VOLTA_HOME="/Users/rtepper/.volta"
+	export VOLTA_HOME="$HOME/.volta"
 	export PATH="$VOLTA_HOME/bin:$PATH"
 
 	export PATH="$PATH:$HOME/.rvm/bin" # RVM must be the last PATH variable change
