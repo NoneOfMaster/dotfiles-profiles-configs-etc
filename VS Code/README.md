@@ -9,8 +9,10 @@ Essential
 - esbenp.prettier-vscode
 - dbaeumer.vscode-eslint
 - tabnine.tabnine-vscode
-- gerane.Theme-Humane
+- gerane.Theme-Humane (light theme)
+- gsdras.night-owl (dark theme)
 - albert.TabOut
+- suchitadoshi1987.file-hopper
 - oderwat.indent-rainbow
 - hoovercj.vscode-settings-cycler
 - deerawan.vscode-dash
@@ -30,7 +32,6 @@ Honerable Mention
 ### LANGUAGE/FRAMEWORK SPECIFIC
 
 - lifeart.vscode-ember-unstable
-- josa.ember-related-files ([w/colocation support](https://github.com/NoneOfMaster/vscode-ember-related-files))
 - lifeart.vscode-glimmer-syntax
 - lifeart.vscode-ember-unstable
 - bradlc.vscode-tailwindcss
@@ -87,8 +88,9 @@ Honerable Mention
 | new folder | | opt + cmd + n
 | **VS CODE** <!---->
 | sidebar | cmd + b |
-| focus and select breadcrumbs | | cmd + shift + .
 | go to shortcuts editor | | ctrl + cmd + k
+| change themes | | ctrl + cmd + t
+| focus and select breadcrumbs | | cmd + shift + .
 | alternate relative/absolute line numbers (extension: Settings Cycler) | | ctrl + cmd + l
 | open last editor/navigate editor picker | | alt + tab
 | reopen closed editor | cmd + shift + t

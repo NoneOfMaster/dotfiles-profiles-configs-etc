@@ -10,14 +10,7 @@
   "workbench.sideBar.location": "right",
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "vim.surround": true,
-  "vim.commentary": true,
-  "vim.indent-object": true,
-  "vim.easymotion": true,
-  "vim.hlsearch": true,
-  "vim.leader": "<space>",
   "telemetry.enableTelemetry": false,
-  "window.zoomLevel": 0,
   "breadcrumbs.enabled": true,
   "[handlebars]": {
     "editor.defaultFormatter": "mfeckies.handlebars-formatter",
@@ -39,5 +32,7 @@
   "gitlens.views.repositories.branches.layout": "list",
   "editor.lineNumbers": "relative",
   "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
-  "tabnine.experimentalAutoImports": true
+  "tabnine.experimentalAutoImports": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.renderControlCharacters": false
 }
