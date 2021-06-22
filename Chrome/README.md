@@ -9,7 +9,9 @@
 - Redux DevTools
 - Ember Inspector
 - Vimium
-	- see Vimium settings
+	- see Vimium setting
+- Dark Reader
+- 1Password
 
 ### Dev Tools
 - dark mode

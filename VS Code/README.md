@@ -15,6 +15,7 @@ Essential
 - suchitadoshi1987.file-hopper
 - oderwat.indent-rainbow
 - hoovercj.vscode-settings-cycler
+- github.remotehub
 - deerawan.vscode-dash
 
 Honerable Mention

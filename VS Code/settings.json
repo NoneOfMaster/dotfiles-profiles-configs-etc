@@ -33,6 +33,12 @@
   "editor.lineNumbers": "relative",
   "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
   "tabnine.experimentalAutoImports": true,
-  "diffEditor.ignoreTrimWhitespace": true,
-  "editor.renderControlCharacters": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.renderControlCharacters": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "git-rebase-todo"
+    }
+  ]
 }

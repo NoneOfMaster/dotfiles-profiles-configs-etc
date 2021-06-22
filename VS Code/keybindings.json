@@ -217,16 +217,6 @@
     "when": "terminalFocus"
   },
   {
-    "key": "shift+cmd+i",
-    "command": "workbench.action.terminal.clear",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "cmd+k",
-    "command": "-workbench.action.terminal.clear",
-    "when": "terminalFocus"
-  },
-  {
     "key": "cmd+;",
     "command": "workbench.action.terminal.split",
     "when": "terminalFocus"
@@ -305,5 +295,32 @@
   {
     "key": "alt+cmd+t",
     "command": "-workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "alt+cmd+h",
+    "command": "extension.dash.specific",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-extension.dash.specific",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+t",
+    "command": "workbench.action.selectTheme"
+  },
+  {
+    "key": "cmd+k cmd+t",
+    "command": "-workbench.action.selectTheme"
+  },
+  {
+    "key": "ctrl+alt+cmd+g",
+    "command": "gitlens.copyRemoteFileUrlFrom"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "workbench.debug.panel.action.clearReplAction",
+    "when": "inDebugRepl"
   }
 ]

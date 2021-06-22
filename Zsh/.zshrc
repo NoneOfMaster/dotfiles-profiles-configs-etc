@@ -44,6 +44,12 @@ source $ZSH/oh-my-zsh.sh
 		fi
 	}
 
+	function zc {
+		z $@
+		c
+		cd -
+	}
+
 	function desktop {
 		cd /Users/$USER/Desktop/$@
 	}
@@ -90,9 +96,13 @@ source $ZSH/oh-my-zsh.sh
 	# ember
 	alias et="z canvas; ember t -s --no-launch"	
 	alias devCanvas="repos; itermocil devCanvas --here"
+	alias devCanvasLite="repos; itermocil devCanvasLite --here"
 	alias devFramework="repos; itermocil devFramework --here"
+	alias devPackagingService="repos; itermocil devPackagingService --here"
 
 # PATH
+	export PATH="/usr/local/bin:$PATH"
+
 	export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 	export VOLTA_HOME="$HOME/.volta"
