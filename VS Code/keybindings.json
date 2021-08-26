@@ -322,5 +322,9 @@
     "key": "shift+cmd+k",
     "command": "workbench.debug.panel.action.clearReplAction",
     "when": "inDebugRepl"
+  },
+  {
+    "key": "alt+cmd+o",
+    "command": "gitlens.openWorkingFile"
   }
 ]

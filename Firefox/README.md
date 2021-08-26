@@ -3,3 +3,4 @@
 - Pocket
 - Vimium
 - 1Password
+- Super Agent

@@ -8,7 +8,7 @@
   "editor.formatOnSave": true,
   "editor.cursorBlinking": "solid",
   "workbench.sideBar.location": "right",
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Victor Mono",
   "editor.fontLigatures": true,
   "telemetry.enableTelemetry": false,
   "breadcrumbs.enabled": true,
@@ -35,10 +35,12 @@
   "tabnine.experimentalAutoImports": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.renderControlCharacters": false,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "default",
-      "filenamePattern": "git-rebase-todo"
-    }
-  ]
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "[svelte]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "window.zoomLevel": 1
 }

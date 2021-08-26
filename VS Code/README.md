@@ -1,5 +1,10 @@
 # VSCode
 
+## Font
+
+[Victor Mono](https://rubjo.github.io/victor-mono/) </br>
+~~[Fira Code](https://github.com/tonsky/FiraCode)~~
+
 ## Extensions
 
 ### GENERAL
@@ -102,6 +107,7 @@ Honerable Mention
 | workbench.actions.openSettings | | [unassigned]
 | **GIT** <!---->
 | open branch > file > line on GitHub (extension: GitLens) | | opt + cmd + g
+| open working file from diff | | opt + cmd + o
 | **HTML & CSS** <!---->
 | emmet | [emmet.io](https://emmet.io/)
 

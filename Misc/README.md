@@ -1,4 +1,5 @@
 Programs
+- [Todoist](https://todoist.com/)
 - [Flow](https://apps.apple.com/us/app/flow-focus-and-work-timer/id1423210932?mt=12)
 - [f.lux](https://justgetflux.com/)
 - [iStat Menus](https://bjango.com/mac/istatmenus/)
