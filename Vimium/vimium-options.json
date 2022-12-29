@@ -1,5 +1,5 @@
 {
-  "settingsVersion": "1.66",
+  "settingsVersion": "1.67.4",
   "exclusionRules": [
     {
       "pattern": "https?://github.com/*",

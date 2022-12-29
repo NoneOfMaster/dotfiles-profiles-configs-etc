@@ -1,12 +1,9 @@
-# Current Setup
-- **VSCode + Neovim**
-- **Karabiner-Elements + BetterTouchTool**
-- **Chrome + Vimium**
-- **iTerm2 + Zsh + Oh My Zsh + fzf**
-- **Right Cmd as Hyper Key + Caps as Exit + Shift+Caps as Caps Lock**
+## Highlights
 
-### Todo
-- VSCode hjkl navigation for `inQuickOpen`
-- [yabai](https://github.com/koekeishiya/yabai)
-- Alfred (README + private backup) 
-	- [ClipChain](https://github.com/DustinLuck/ClipChain)-like bindings 
+||||
+|-|-|-|
+| Global Key Bindings | **Karabiner-Elements + BetterTouchTool** | [Karabiner-Elements configs](/Karabiner-Elements/README.md), [BetterTouchTool configs](/BetterTouchTool/README.md)|
+| Code Editor | **VSCode + Neovim** | [VSCode configs](/VS%20Code/README.md), [Neovim init.vim](/Neovim/init.vim) |
+| Browser | **Firefox Developer Edition + Vimium** | [Firefox extensions](/Firefox/README.md), [Vimium-FF setup](/Vimium/README.md)|
+| Console | **iTerm2 + Zsh + Oh My Zsh + fzf** | [CLI settings](/iTerm/README.md) |
+| Apps and Misc | * | *[Misc/README.md](/Misc/README.md) |

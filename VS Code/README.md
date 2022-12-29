@@ -1,5 +1,10 @@
 # VSCode
 
+## Settings Files
+
+- [settings.json](./settings.json)
+- [keybindings.json](./keybindings.json)
+
 ## Font
 
 [Victor Mono](https://rubjo.github.io/victor-mono/) </br>
@@ -10,37 +15,37 @@
 ### GENERAL
 
 Essential
-- asvetliakov.vscode-neovim
-- esbenp.prettier-vscode
-- dbaeumer.vscode-eslint
-- tabnine.tabnine-vscode
-- gerane.Theme-Humane (light theme)
-- gsdras.night-owl (dark theme)
-- albert.TabOut
-- suchitadoshi1987.file-hopper
-- oderwat.indent-rainbow
-- hoovercj.vscode-settings-cycler
+- [asvetliakov.vscode-neovim](https://github.com/vscode-neovim/vscode-neovim)
+- [eamodio.gitlens](https://github.com/gitkraken/vscode-gitlens)
+- [esbenp.prettier-vscode](https://github.com/prettier/prettier-vscode)
+- [dbaeumer.vscode-eslint](https://github.com/Microsoft/vscode-eslint)
+- [tabnine.tabnine-vscode](https://github.com/codota/tabnine-vscode)
+- [gerane.Theme-Humane](https://github.com/gerane/VSCodeThemes) (light theme)
+- [gsdras.night-owl](https://github.com/sdras/night-owl-vscode-theme) (dark theme)
+- [albert.TabOut](https://github.com/albertromkes/tabout)
+- [suchitadoshi1987.file-hopper](https://github.com/suchitadoshi1987/related-files-hopper)
+- [oderwat.indent-rainbow](https://github.com/oderwat/vscode-indent-rainbow)
+- [hoovercj.vscode-settings-cycler](https://github.com/hoovercj/vscode-api-playground)
+- [github.vscode-pull-request-github](https://github.com/Microsoft/vscode-pull-request-github)
+- [sleistner.vscode-fileutils](https://github.com/sleistner/vscode-fileutils)
+
+### Honerable Mention
+- johnpapa.vscode-peacock
+- formulahendry.code-runner
+- humao.rest-client
+- aaron-bond.better-comments
+- msjsdiag.debugger-for-chrome
 - github.remotehub
 - deerawan.vscode-dash
 
-Honerable Mention
-- formulahendry.code-runner
-- humao.rest-client
-- johnpapa.vscode-peacock
-- aaron-bond.better-comments
-- msjsdiag.debugger-for-chrome
-
-### GIT
-
-- github.vscode-pull-request-github
-- eamodio.gitlens
-
 ### LANGUAGE/FRAMEWORK SPECIFIC
-
 - lifeart.vscode-ember-unstable
 - lifeart.vscode-glimmer-syntax
 - lifeart.vscode-ember-unstable
 - bradlc.vscode-tailwindcss
+- mfeckies.handlebars-formatter
+- rebornix.ruby
+- wingrunr21.vscode-ruby
 
 ## Bindings
 

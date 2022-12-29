@@ -30,7 +30,7 @@
 	:nnoremap <leader>P "*P
 	:nnoremap <leader>y "*y
 	:nnoremap <leader>d "_d
-	
+
 	" replacement
 	:nnoremap <leader>r viwpyiw
 	:nmap <leader><S-R>  <Plug>ReplaceWithRegisterOperator
@@ -38,18 +38,12 @@
 	" escape to clear last search highlighting
 	:nnoremap <silent> <Esc> :nohlsearch<Esc>
 
-	" one leader for easymotion instead of two
-	map <leader> <Plug>(easymotion-prefix)
-
 " settings
 	" tabstops and shiftwidth 2 spaces
 	:set ts=2 sw=2
 
 	" default case insensitive search
 	:set ic
-
-	hi EasyMotionTarget2First ctermbg=none ctermfg=red
-	hi EasyMotionTarget2Second ctermbg=none ctermfg=red
 
 " custom text objects
 
@@ -69,10 +63,8 @@
 		Plug 'kana/vim-textobj-indent'
 		Plug 'kana/vim-textobj-entire'
 		Plug 'inkarkat/vim-ReplaceWithRegister'
-
-		if exists('g:vscode')
-			Plug 'asvetliakov/vim-easymotion'
-		else 
-			Plug 'easymotion/vim-easymotion'
-		endif
+		Plug 'ggandor/leap.nvim'
 	call plug#end()
+
+"
+lua require('leap').add_default_mappings()

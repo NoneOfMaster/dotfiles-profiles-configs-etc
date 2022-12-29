@@ -1,1 +1,7 @@
-See Hyper Key setup in [karabiner.json](../Karabiner-Elements/karabiner.json)
+## Settings Files
+
+- [russell.bttpreset](./russell.bttpreset) 
+
+## See Also
+
+- [Karabiner_Elements Hyper Key setup](/Karabiner-Elements/README.md)

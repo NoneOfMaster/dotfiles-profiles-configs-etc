@@ -1,5 +1,5 @@
 # Path to oh-my-zsh installation
-	export ZSH="/Users/rtepper/.oh-my-zsh"
+	export ZSH="/Users/$USER/.oh-my-zsh"
  
 # Theme
 	ZSH_THEME="robbyrussell"
@@ -61,6 +61,7 @@ source $ZSH/oh-my-zsh.sh
 # Env Vars
 	export GIT_EDITOR="code -w"
 	export EDITOR="code -w"
+	export NODE_ENV="development"
 
 # Aliases
 	# overrides
@@ -71,10 +72,6 @@ source $ZSH/oh-my-zsh.sh
 	alias zshconfig="v ~/.zshrc"
 	alias nvimconfig="v ~/.config/nvim/init.vim"
 
-	# ls
-	alias ll="ls -lah" # long, all, human-readable 
-	alias l="ls -a"
-
 	# applications
 	alias o="open ."
 
@@ -82,31 +79,44 @@ source $ZSH/oh-my-zsh.sh
 	alias ..="cd .."
 	alias h="cd -" 
 
-	# builtins, misc
+	# builtins
+	alias ll="ls -lah" # long, all, human-readable 
+	alias l="ls -a"
 	alias grep="grep --color=auto"
 	alias mkdir="mkdir -pv" # parents, verbose
-
 	# https://github.com/sindresorhus/trash-cli
 	alias rm='echo "rm alias (/bin/rm) disabled: use trash"'
+
+	# misc
+	alias k="kubectl"
 
 	# git
 	# edit and/or confirm list of local branches tracking merged remote branches and delete
 	alias gtrim='git branch --merged | grep -v "master" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches'
 	
-	# ember
+	# MI
 	alias et="z canvas; ember t -s --no-launch"	
 	alias devCanvas="repos; itermocil devCanvas --here"
+	alias devCanvasMedium="repos; itermocil devCanvasMedium --here"
+	alias devCanvasMediumTest="repos; itermocil devCanvasMediumTest --here"
 	alias devCanvasLite="repos; itermocil devCanvasLite --here"
+	alias devCanvasLiteTest="repos; itermocil devCanvasLiteTest --here"
+	alias devCanvasOnly="repos; itermocil devJustCanvas --here"
+	alias dc="devCanvasOnly"
+	alias devCanvasOnlyTest="repos; itermocil devJustCanvasTest --here"
 	alias devFramework="repos; itermocil devFramework --here"
 	alias devPackagingService="repos; itermocil devPackagingService --here"
+	alias devDataSources="repos; itermocil devDataSources --here"
+
+	# random
+	alias arttime="/Users/$USER/Desktop/repos/arttime/bin/arttime"
+	alias buddha='arttime --nolearn -a buddha7 -b buddha8 -t "peace is every step"'
 
 # PATH
 	export PATH="/usr/local/bin:$PATH"
 
 	export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-	export VOLTA_HOME="$HOME/.volta"
-	export PATH="$VOLTA_HOME/bin:$PATH"
 
 	export PATH="$PATH:$HOME/.rvm/bin" # RVM must be the last PATH variable change
 
@@ -147,4 +157,8 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
+export PATH="/Users/$USER/Library/Python/2.7/bin:$PATH"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"

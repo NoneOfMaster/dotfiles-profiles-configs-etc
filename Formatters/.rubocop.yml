@@ -1,0 +1,80 @@
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: disable
+  DisabledByDefault: true
+  Exclude:
+    - "bin/**/*"
+    - "vendor/bundle/**/*"
+
+#################### Layout ##############################
+
+Layout:
+  Enabled: true
+  Severity: warning
+
+Layout/HeredocIndentation:
+  Enabled: true
+
+Layout/LineLength:
+  Max: 230
+
+Layout/HashAlignment:
+  Enabled: false
+
+#################### Lint ################################
+
+Lint:
+  Enabled: true
+
+Lint/SuppressedException:
+  Enabled: false
+
+Lint/UriEscapeUnescape:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
+
+###################### Metrics ####################################
+
+Metrics:
+  Enabled: false
+
+Metrics/BlockNesting:
+  Description: "Avoid excessive block nesting"
+  StyleGuide: "https://github.com/bbatsov/ruby-style-guide#three-is-the-number-thou-shalt-count"
+  Enabled: true
+  Max: 4
+
+Metrics/CyclomaticComplexity:
+  Description: >-
+    A complexity metric that is strongly correlated to the number
+    of test cases needed to validate a method.
+  Enabled: true
+
+Metrics/MethodLength:
+  Description: "Avoid methods longer than 40 lines of code."
+  StyleGuide: "https://github.com/bbatsov/ruby-style-guide#short-methods"
+  Enabled: false
+  Max: 40
+
+Metrics/ModuleLength:
+  Description: "Avoid modules longer than 250 lines of code."
+  Enabled: true
+  Max: 250
+
+Metrics/ParameterLists:
+  Description: "Avoid parameter lists longer than three or four parameters."
+  StyleGuide: "https://github.com/bbatsov/ruby-style-guide#too-many-params"
+  Enabled: true
+
+##################### Security #############################
+
+Security:
+  Enabled: true
+
+##################### Style #############################
+
+Style/HashSyntax:
+  Enabled: true
