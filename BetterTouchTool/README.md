@@ -1,6 +1,7 @@
 ## Settings Files
 
-- [russell.bttpreset](./russell.bttpreset) 
+- [russell-singleScreen.bttpreset](./russell-singleScreen.bttpreset) 
+- [russell-battlestation.bttpreset](./russell-battlestation.bttpreset) 
 
 ## See Also
 

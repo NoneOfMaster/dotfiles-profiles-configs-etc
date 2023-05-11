@@ -95,15 +95,9 @@ source $ZSH/oh-my-zsh.sh
 	alias gtrim='git branch --merged | grep -v "master" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches'
 	
 	# MI
-	alias et="z canvas; ember t -s --no-launch"	
 	alias devCanvas="repos; itermocil devCanvas --here"
 	alias devCanvasMedium="repos; itermocil devCanvasMedium --here"
-	alias devCanvasMediumTest="repos; itermocil devCanvasMediumTest --here"
 	alias devCanvasLite="repos; itermocil devCanvasLite --here"
-	alias devCanvasLiteTest="repos; itermocil devCanvasLiteTest --here"
-	alias devCanvasOnly="repos; itermocil devJustCanvas --here"
-	alias dc="devCanvasOnly"
-	alias devCanvasOnlyTest="repos; itermocil devJustCanvasTest --here"
 	alias devFramework="repos; itermocil devFramework --here"
 	alias devPackagingService="repos; itermocil devPackagingService --here"
 	alias devDataSources="repos; itermocil devDataSources --here"
