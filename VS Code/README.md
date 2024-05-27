@@ -28,6 +28,7 @@ Essential
 - [hoovercj.vscode-settings-cycler](https://github.com/hoovercj/vscode-api-playground)
 - [github.vscode-pull-request-github](https://github.com/Microsoft/vscode-pull-request-github)
 - [sleistner.vscode-fileutils](https://github.com/sleistner/vscode-fileutils)
+- [github.copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
 ### Honerable Mention
 - johnpapa.vscode-peacock

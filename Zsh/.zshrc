@@ -55,7 +55,7 @@ source $ZSH/oh-my-zsh.sh
 	}
 
 	function repos {
-		cd /Users/$USER/Desktop/repos/$@
+		cd /Users/$USER/Documents/repos/$@
 	}
 
 # Env Vars
@@ -95,24 +95,14 @@ source $ZSH/oh-my-zsh.sh
 	alias gtrim='git branch --merged | grep -v "master" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches'
 	
 	# MI
-	alias devCanvas="repos; itermocil devCanvas --here"
-	alias devCanvasMedium="repos; itermocil devCanvasMedium --here"
-	alias devCanvasLite="repos; itermocil devCanvasLite --here"
-	alias devFramework="repos; itermocil devFramework --here"
-	alias devPackagingService="repos; itermocil devPackagingService --here"
-	alias devDataSources="repos; itermocil devDataSources --here"
-
-	# random
-	alias arttime="/Users/$USER/Desktop/repos/arttime/bin/arttime"
-	alias buddha='arttime --nolearn -a buddha7 -b buddha8 -t "peace is every step"'
+	alias devMI="repos; itermocil MI --here"
+	alias devPackaging="devMI; itermocil MIPackaging --here"
+	alias devPreviewing="devPackaging; itermocil MIPreviewing --here"
 
 # PATH
 	export PATH="/usr/local/bin:$PATH"
 
 	export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-
-	export PATH="$PATH:$HOME/.rvm/bin" # RVM must be the last PATH variable change
 
 # Vim Mode
 	bindkey -v
@@ -130,29 +120,30 @@ source $ZSH/oh-my-zsh.sh
 	export KEYTIMEOUT=1
 
 ### Added by Zinit's installer
-if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
-    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
-    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
-        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
-        print -P "%F{160}▓▒░ The clone has failed.%f%b"
-fi
-
-source "$HOME/.zinit/bin/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
 
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-bin-gem-node
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
 
-export PATH="/Users/$USER/Library/Python/2.7/bin:$PATH"
+export PATH="/Users/$USER/Library/Python/3.9/bin:$PATH"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source <(fzf --zsh)
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
