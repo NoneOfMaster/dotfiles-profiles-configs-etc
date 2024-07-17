@@ -1,0 +1,18 @@
+windows:
+  - name: run-studio
+    root: /Users/$USER/Documents/repos
+    layout: 3_columns
+    panes:
+      - commands:
+          - cd front-end/packages/canvas
+          - yarn start
+      - commands:
+          - cd front-end/packages/studio
+          - yarn dev
+      - commands:
+          - cd movableink
+          - bundle exec bin/rails s
+      - commands:
+          - code front-end
+          - echo "   \\033[0;33mWelcome to Movable Ink Studio"
+        focus: true

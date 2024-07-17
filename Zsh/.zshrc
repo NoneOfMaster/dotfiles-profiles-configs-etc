@@ -98,6 +98,10 @@ source $ZSH/oh-my-zsh.sh
 	alias devMI="repos; itermocil MI --here"
 	alias devPackaging="devMI; itermocil MIPackaging --here"
 	alias devPreviewing="devPackaging; itermocil MIPreviewing --here"
+	alias addPackaging="itermocil MIPackaging --here"
+	alias addPreviewing="itermocil MIPreviewing --here"
+	localmi() { /Users/$USER/Documents/repos/cli/lib/cli.js "$@" }
+
 
 # PATH
 	export PATH="/usr/local/bin:$PATH"
@@ -136,9 +140,6 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 
 export PATH="/Users/$USER/Library/Python/3.9/bin:$PATH"
-
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

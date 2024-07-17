@@ -1,0 +1,15 @@
+windows:
+  - name: run-data-sources
+    root: /Users/$USER/Documents/repos
+    layout: tiled
+    panes:
+      - commands:
+          - cd front-end/packages/hogwarts
+          - yarn start
+      - commands:
+          - cd sorcerer
+          - node index.js
+      - commands:
+          - code front-end
+          - echo "   \\033[0;33mWelcome to Movable Ink Studio"
+        focus: true
