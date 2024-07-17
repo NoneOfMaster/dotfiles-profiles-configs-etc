@@ -1,0 +1,18 @@
+windows:
+  - name: run-previewing
+    root: /Users/$USER/Documents/repos
+    layout: 3_columns
+    panes:
+      - commands:
+          - cd tyson_api
+          - bin/tyson_api -c config/development/tyson_api.yml
+      - commands:
+          - cd ojos
+          - yarn start
+      - commands:
+          - cd capturama
+          - colima start
+          - docker-compose run -p 12345:12345 capturama
+      - commands:
+          - echo "   \\033[0;33mWelcome to Movable Ink Studio"
+        focus: true

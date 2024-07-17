@@ -89,6 +89,7 @@ source $ZSH/oh-my-zsh.sh
 
 	# misc
 	alias k="kubectl"
+	alias yl="/Users/$USER/Library/Python/3.12/bin/yawsso login --profile production-us:default"
 
 	# git
 	# edit and/or confirm list of local branches tracking merged remote branches and delete
@@ -98,6 +99,11 @@ source $ZSH/oh-my-zsh.sh
 	alias devMI="repos; itermocil MI --here"
 	alias devPackaging="devMI; itermocil MIPackaging --here"
 	alias devPreviewing="devPackaging; itermocil MIPreviewing --here"
+	alias devDataSources="devPreviewing; itermocil MIDataSources --here"
+	alias addPackaging="itermocil MIPackaging --here"
+	alias addPreviewing="itermocil MIPreviewing --here"
+	alias addDataSources="itermocil MIDataSources --here"
+	localmi() { /Users/$USER/Documents/repos/cli/lib/cli.js "$@" }
 
 # PATH
 	export PATH="/usr/local/bin:$PATH"
@@ -134,11 +140,6 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
-
-export PATH="/Users/$USER/Library/Python/3.9/bin:$PATH"
-
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

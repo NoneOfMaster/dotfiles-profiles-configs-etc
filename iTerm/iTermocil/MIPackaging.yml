@@ -1,0 +1,15 @@
+windows:
+  - name: run-packaging
+    root: /Users/$USER/Documents/repos
+    layout: tiled
+    panes:
+      - commands:
+          - cd studio-packaging-service
+          - yarn start:dev --skip-cache
+      - commands:
+          - cd studio-package-proxy
+          - yarn start:dev
+      - commands:
+          - yawsso login --profile production-us:default
+          - echo "   \\033[0;33mWelcome to Movable Ink"
+        focus: true
