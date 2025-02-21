@@ -4,6 +4,9 @@ windows:
     layout: tiled
     panes:
       - commands:
+          - cd movableink
+          - VERBOSE=1 bin/rake env resque:pool
+      - commands:
           - cd front-end/packages/hogwarts
           - yarn start
       - commands:
